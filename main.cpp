@@ -99,7 +99,7 @@ int main() {
         }
 
         else {
-            string dataPath = "/Users/annikamore/Desktop/Ikon-Epic-Comparison/skiresorts.csv";
+            string dataPath = "/Users/annikamore/Desktop/Ikon-Epic-Comparison1/skiresorts.csv";
             call_R_script_with_dataset(dataPath);
         }
 
@@ -178,6 +178,6 @@ vector<int> getUserInput(){
 
 
 void call_R_script_with_dataset(const string& dataset_path) {
-    string command = "Rscript /Users/annikamore/Desktop/Ikon-Epic-Comparison/skiGraphs.R " + dataset_path;
+    string command = "Rscript /Users/annikamore/Desktop/Ikon-Epic-Comparison1/skiGraphs.R " + dataset_path;
     system(command.c_str());
 }
