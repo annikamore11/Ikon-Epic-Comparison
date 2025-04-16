@@ -71,7 +71,7 @@ resorts_by_state_coords <- resorts_by_state_coords %>%
 
 
 # Save the plot to a PDF file with a custom size and resolution
-pdf("/Users/annikamore/Desktop/CLion/M3OEP-ahmore/skiGraphs.pdf", width = 8, height = 6)
+pdf("/Users/annikamore/Desktop/Ikon-Epic-Comparison1/skiGraphs.pdf", width = 8, height = 6)
 
 ggplot() +
   geom_polygon(data=us_map, aes(x=long, y=lat, group=group), color="grey", fill="white") +
