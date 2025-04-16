@@ -174,6 +174,6 @@ vector<int> getUserInput(){
 
 
 void call_R_script_with_dataset(const string& dataset_path) {
-    string command = "Rscript /Users/annikamore/Desktop/CLion/M3OEP-ahmore/skiGraphs.R " + dataset_path;
+    string command = "Rscript skiGraphs.R " + dataset_path;
     system(command.c_str());
 }
