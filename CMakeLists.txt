@@ -8,7 +8,8 @@ add_executable(M2OEP_ahmore
         Resort.cpp
         Size.cpp
         SkiPass.cpp
-        Comparison.cpp)
+        Comparison.cpp
+        skiGraphs.R)
 
 add_executable(Ski_Resort_Testing
         Ski_Resort_Testing.cpp
