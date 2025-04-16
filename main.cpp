@@ -99,8 +99,8 @@ int main() {
         }
 
         else {
-            string scriptPath = string(getenv("CMAKE_BINARY_DIR")) + "/skiGraphs.R";
-            call_R_script_with_dataset(scriptPath);
+            string dataPath = "/Users/annikamore/skiresorts.csv";
+            call_R_script_with_dataset(dataPath);
         }
 
     }
@@ -178,6 +178,6 @@ vector<int> getUserInput(){
 
 
 void call_R_script_with_dataset(const string& dataset_path) {
-    string command = "Rscript " + dataset_path;
+    string command = "Rscript /Users/annikamore/Desktop/skiGraphs.R " + dataset_path;
     system(command.c_str());
 }
