@@ -1,5 +1,7 @@
 
-####### Loading the required packages #######
+####### Load/install the required packages #######
+# Set default CRAN mirror
+options(repos = c(CRAN = "https://cloud.r-project.org/"))
 install.packages("pacman")
 pacman::p_load(readxl, tidyverse, GGally, factoextra, 
                gridExtra, cluster, ggrepel, NbClust, ggplot2, dplyr, maps, RMySQL, grid)
