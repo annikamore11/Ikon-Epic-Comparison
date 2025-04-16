@@ -99,7 +99,7 @@ int main() {
         }
 
         else {
-            string dataPath = "/Users/annikamore/skiresorts.csv";
+            string dataPath = "/Users/annikamore/Desktop/skiresorts.csv";
             call_R_script_with_dataset(dataPath);
         }
 
