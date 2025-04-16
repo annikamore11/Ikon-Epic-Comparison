@@ -3,6 +3,10 @@
 //
 # include <iostream>
 #include <vector>
+#include <fstream>
+#include <sstream>
+#include <cstdlib> // for system()
+#include <string>
 #include "Resort.h"
 #include "Comparison.h"
 using namespace std;
@@ -95,8 +99,8 @@ int main() {
         }
 
         else {
-            string dataPath = "/Users/annikamore/Desktop/CLion/M3OEP-ahmore/skiresorts.csv";
-            call_R_script_with_dataset(dataPath);
+            string scriptPath = string(getenv("CMAKE_BINARY_DIR")) + "/skiGraphs.R";
+            call_R_script_with_dataset(scriptPath);
         }
 
     }
@@ -174,6 +178,6 @@ vector<int> getUserInput(){
 
 
 void call_R_script_with_dataset(const string& dataset_path) {
-    string command = "Rscript skiGraphs.R " + dataset_path;
+    string command = "Rscript " + dataset_path;
     system(command.c_str());
 }
